@@ -1,0 +1,235 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;  
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* navigation bar logo and image */
+
+#logo{
+margin: 30px 30px;
+}
+#logo img{
+height: 60px;
+margin: -21px -28px;
+/* border-radius: 55px 55px 55px 55px; */
+}
+/* list item styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Fredoka One', bold;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* margin: 2px 2px; */
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+   
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 23px;
+   border-radius:20px ;
+   text-decoration: none;
+}
+
+   #navbar ul li a:hover{
+    color:black;
+  background-color: white;}
+
+
+  /* home section */
+  #home{
+      display: flex;
+      height: 552px;
+      flex-direction: column;
+      padding: 3px 300px;
+      justify-content: center;
+      align-items: center;
+  }
+  #home::before{
+    content: "";
+    background:url('https://cdn.pixabay.com/photo/2017/11/25/17/17/sandwich-2977251_960_720.jpg') no-repeat center center/cover;
+    /* background:url('https://i.pinimg.com/originals/2d/af/b3/2dafb3e416e50dfc93e77756cfd47e10.jpg') no-repeat center center/cover; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.90;
+   
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+}
+#home p{
+    color:white;
+    text-align: center;  
+    font-family: 'Paytone One', sans-serif;
+}
+/* services section */
+#services-container::before{
+    content: "";
+    position:absolute;
+    background-color: yellow;
+    /* background:url('https://cdn.pixabay.com/photo/2017/06/05/14/05/foos-2374169_960_720.jpg') no-repeat center center/cover; */
+    height: 470px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#services{
+margin: 34px;
+display: flex;
+background-color: darkgreen;
+}
+#services .box{
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid black;
+
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+/* client section */
+#client-section{
+    position: relative;
+    /* height: 344px; */
+    
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 23px;
+    opacity: 10;
+
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/09/25/15/32/anise-2785512_960_720.jpg') no-repeat center center/cover;
+    width: 100%;
+    height:500px;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+  #clients img {
+     /* height: 70px; */
+     width: 70px;
+     padding: 6PX;
+     height: auto;
+  } 
+ #contact::before{
+     content: "";
+    position: absolute;
+    height: 553px;
+    width: 100%;
+    background: url('https://fedirko.pro/images/bg/contactus-bg.jpg') no-repeat center center/cover;
+    z-index: -1;
+  
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+
+}
+
+#contact-box form{
+    width: 40%;
+ 
+}
+#contact-box label{
+    color: white;
+ 
+    font-family: 'Paytone One', sans-serif  bold;
+    font-size: 1.3rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+footer{
+    background-color:black;
+        color:white;
+    padding:6px 2px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Paytone One', sans-serif;
+    /* color:white; */
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Paytone One', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 0.1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
